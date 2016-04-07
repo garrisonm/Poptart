@@ -1,0 +1,240 @@
+/* =======================================
+    style.css
+    use this file for your custom styles
+========================================== */
+
+/* use a box model that makes sense */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1000px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: #0061af;
+  max-width: 100%;
+  padding: 20px;
+}
+
+footer {
+  background: #0061af;
+  max-width: 100%;
+  color: #fff;
+  padding: 20px;
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 3em; /* 48px */
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  text-transform: uppercase;
+  color: #002650;
+}
+
+h2 {
+  font-size: 2.25em; /* 36px */
+  font-family: 'Kalam', cursive;
+  margin: 0px;
+  color: #002650;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-family: 'Kalam', cursive;
+  margin: 0px;
+  color: #003b7b;
+  border-bottom: 3px solid #004794;
+}
+
+h4 {
+  font-size: 1.125em; /*18px */
+  font-family: 'Waiting for the Sunrise', cursive;
+  margin: 0px;
+  color: #015cbe;
+}
+
+b {
+  color: #0154af;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+u {
+  text-decoration: none;
+  font-weight: bold;
+}
+#ingredients {
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+table {
+  width: 350px;
+  max-width: 100%;
+}
+
+table, th, td {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+table, th, tr {
+  border: 1px solid #000;
+}
+
+/* navigation list styles */
+
+  nav ul {
+    text-align: center;
+    background: #237fc8;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    border-bottom: 6px solid #aec1f0;
+  }
+
+  nav a:link, a:active, a:visited {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+
+   nav a:hover {
+     color: yellow;
+   }
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-list {
+  padding: 0; /*remove the list indent*/
+}
+
+.nav-list li {
+  list-style: none; /*remove list style*/
+  display: inline; /*display list left to right*/
+  padding-right: 20px; /*add space between items*/
+}
+
+.nav-list li:last-child { /*select only the last li*/
+  padding-right: 0; /*remove padding from this li*/
+}
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+
+
+}
+
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
